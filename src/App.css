@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1115; /* Negro carbón profundo */
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  color: #f0f0f5;
+}
+
+/* ===== MENÚ ===== */
+.navbar {
+  background: #181a20 !important;
+  border-bottom: 4px solid #fecb05; /* Amarillo Ultra Ball */
+  box-shadow: 0 4px 15px rgba(254, 203, 5, 0.2);
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fecb05 !important;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(254, 203, 5, 0.4);
+}
+
+.navbar-brand span {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #a0a5b5 !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: #fecb05 !important;
+  transform: translateY(-2px);
+}
+
+/* ===== PÁGINAS ===== */
+.page-container {
+  min-height: 60vh;
+  padding: 30px 0;
+}
+
+.page-title {
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #fecb05;
+  text-shadow: 3px 3px 0 #000000;
+}
+
+.page-title .emoji {
+  margin-right: 10px;
+}
+
+.page-content {
+  color: #c5c8d4;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== TARJETAS ===== */
+.card-custom {
+  background: #181a20;
+  border: 3px solid #2a2d37;
+  border-top: 4px solid #fecb05; /* Franja superior amarilla de la Ultra Ball */
+  border-radius: 16px;
+  padding: 25px 30px;
+  transition: all 0.2s ease;
+  margin: 15px 0;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+.card-custom:hover {
+  background: #1f222b;
+  border-color: #fecb05;
+  transform: translateY(-4px);
+  box-shadow: 7px 7px 0 #000000, 0 0 15px rgba(254, 203, 5, 0.2);
+}
+
+.card-custom h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ===== BOTÓN ===== */
+.btn-custom {
+  background: #fecb05; /* Amarillo Ultra Ball */
+  color: #0f1115;
+  border: 3px solid #000000;
+  padding: 10px 32px;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 0 #b89200;
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #b89200;
+  background: #ffe056;
+  color: #0f1115;
+}
+
+.btn-custom:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #b89200;
+}
+
+/* ===== IMAGEN ===== */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 3px solid #fecb05;
+  box-shadow: 6px 6px 0 #000000;
+}
+
+/* ===== FORMULARIO ===== */
+.form-control {
+  background: #181a20 !important;
+  border: 3px solid #2a2d37 !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  padding: 12px 16px !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5) !important;
+}
+
+.form-control:focus {
+  border-color: #fecb05 !important;
+  box-shadow: 0 0 10px rgba(254, 203, 5, 0.3) !important;
+  background: #1f222b !important;
+}
+
+.form-control::placeholder {
+  color: #606575 !important;
+}
+
+.form-label {
+  color: #fecb05;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ===== FOOTER ===== */
+.footer-bts {
+  background: #090a0d;
+  border-top: 4px solid #2a2d37;
+  padding: 25px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-bts p {
+  margin: 0;
+  color: #808595;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.footer-bts .heart {
+  color: #fecb05;
+}
+
+.footer-bts .bts-name {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
